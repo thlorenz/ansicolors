@@ -22,4 +22,4 @@ console.log(brightBlueMoon);  // I think you got the idea
 
 ## Tests
 
-Look at the [tests] to see more examples and/or run them via: `npm explore ansicolors && npm test`
+Look at the [tests](https://github.com/thlorenz/ansicolors/blob/master/test/ansicolors.js) to see more examples and/or run them via: `npm explore ansicolors && npm test`

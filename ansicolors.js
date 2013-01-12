@@ -20,14 +20,22 @@ var colorNums = {
     , brightWhite   :  97
     }
   , backgroundColorNums = {
-      bgBlack   :  40
-    , bgRed     :  41
-    , bgGreen   :  42
-    , bgYellow  :  43
-    , bgBlue    :  44
-    , bgMagenta :  45
-    , bgCyan    :  46
-    , bgWhite   :  47
+      bgBlack         :  40
+    , bgRed           :  41
+    , bgGreen         :  42
+    , bgYellow        :  43
+    , bgBlue          :  44
+    , bgMagenta       :  45
+    , bgCyan          :  46
+    , bgWhite         :  47
+    , bgBrightBlack   :  100
+    , bgBrightRed     :  101
+    , bgBrightGreen   :  102
+    , bgBrightYellow  :  103
+    , bgBrightBlue    :  104
+    , bgBrightMagenta :  105
+    , bgBrightCyan    :  106
+    , bgBrightWhite   :  107
     } 
   , colors = {};
 

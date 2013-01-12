@@ -30,6 +30,11 @@ assert.equal(
   , '\u001b[43mprinted with yellow background\u001b[49m'
 );
 assert.equal(
+    colors.bgBrightYellow('printed with bright yellow background')
+  , '\u001b[103mprinted with bright yellow background\u001b[49m'
+);
+
+assert.equal(
     colors.bgWhite('printed with white background')
   , '\u001b[47mprinted with white background\u001b[49m'
 );

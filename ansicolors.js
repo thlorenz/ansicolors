@@ -37,8 +37,25 @@ var colorNums = {
     , bgBrightCyan    :  106
     , bgBrightWhite   :  107
     } 
-  , colors = {};
+  , colors = {}
+  , styleNums = {
+      bold      :  [1, 22]
+    , dim       :  [2, 22]
+    , italic    :  [3, 23]
+    , underline :  [4, 24]
+    , blink :  [5, 25]
+    , inverse   :  [7, 27]
+  }
+  , styles = {}
+  ;
 
+Object.keys(styleNums).forEach(function (k) {
+  styles[k] = function (s) { 
+    var open = styleNums[k][0]
+      , close = styleNums[k][1];
+    return '\u001b[' + open + 'm' + s + '\u001b[' + close + 'm';
+  };
+});
 
 Object.keys(colorNums).forEach(function (k) {
   colors[k] = function (s) { 
@@ -52,4 +69,12 @@ Object.keys(backgroundColorNums).forEach(function (k) {
   };
 });
 
+
 module.exports = colors;
+
+// bold - brightens the color
+// italic - nothing on mac
+// underline - underlines string
+// blink - nothing on mac
+// inverse - background becomes foreground and vice versa
+console.log( styles.blink(colors.brightBlue(' Hello world ')));

@@ -38,12 +38,17 @@ var colorNums = {
     , bgBrightWhite   :  107
     } 
   , colors = {}
+    // bold      - brightens the color (bold-blue is same as brigthtBlue)
+    // italic    - nothing on Mac or Linux
+    // underline - underlines string
+    // blink     - nothing on Mac or linux
+    // inverse   - background becomes foreground and vice versa
   , styleNums = {
       bold      :  [1, 22]
     , dim       :  [2, 22]
     , italic    :  [3, 23]
     , underline :  [4, 24]
-    , blink :  [5, 25]
+    , blink     :  [5, 25]
     , inverse   :  [7, 27]
   }
   , styles = {}
@@ -71,10 +76,3 @@ Object.keys(backgroundColorNums).forEach(function (k) {
 
 
 module.exports = colors;
-
-// bold - brightens the color
-// italic - nothing on mac
-// underline - underlines string
-// blink - nothing on mac
-// inverse - background becomes foreground and vice versa
-console.log( styles.blink(colors.brightBlue(' Hello world ')));

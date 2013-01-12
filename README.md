@@ -22,7 +22,7 @@ console.log(brightBlueMoon);  // I think you got the idea
 
 // background colors
 console.log(colors.bgYellow('printed on yellow background'));
-console.log(colors.bgBlue('printed on blue background'));
+console.log(colors.bgBrightBlue('printed on bright blue background'));
 
 // mixing background and foreground colors
 // below two lines have same result (order in which bg and fg are combined doesn't matter)

@@ -35,3 +35,8 @@ console.log(colors.blue(colors.bgYellow('printed on yellow background in blue'))
 Look at the [tests](https://github.com/thlorenz/ansicolors/blob/master/test/ansicolors.js) to see more examples and/or run them via: 
 
     npm explore ansicolors && npm test
+
+## Alternatives
+
+**ansicolors** tries to meet simple use cases with a very simple API. However, if you need a more powerful ansi formatting tool, 
+I'd suggest to look at the [features](https://github.com/TooTallNate/ansi.js#features) of the [ansi module](https://github.com/TooTallNate/ansi.js).

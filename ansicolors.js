@@ -52,4 +52,8 @@ Object.keys(backgroundColorNums).forEach(function (k) {
   };
 });
 
+colors.bold = function (s) {
+  return '\u001b[1m' + s + '\u001b[22m';
+};
+
 module.exports = colors;

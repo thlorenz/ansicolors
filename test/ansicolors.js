@@ -53,3 +53,9 @@ assert.equal(
 );
 
 console.log('OK');
+
+console.log('Bold ..');
+
+assert.equal(colors.bold('printed in bold'), '\u001b[1mprinted in bold\u001b[22m');
+
+console.log('OK');

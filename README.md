@@ -30,6 +30,24 @@ console.log(colors.bgYellow(colors.blue('printed on yellow background in blue'))
 console.log(colors.blue(colors.bgYellow('printed on yellow background in blue')));
 ```
 
+## Advanced API
+
+**ansicolors** allows you to access opening and closing escape sequences separately.
+
+```js
+var colors = require('ansicolors');
+
+function inspect(obj, depth) {
+  return require('util').inspect(obj, false, depth || 5, true);
+}
+
+console.log('open blue', inspect(colors.open.blue));
+console.log('close bgBlack', inspect(colors.close.bgBlack));
+
+// => open blue '\u001b[34m'
+//    close bgBlack '\u001b[49m'
+```
+
 ## Tests
 
 Look at the [tests](https://github.com/thlorenz/ansicolors/blob/master/test/ansicolors.js) to see more examples and/or run them via: 

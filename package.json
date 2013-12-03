@@ -1,6 +1,6 @@
 {
   "name": "ansicolors",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Functions that surround a string with ansicolor codes so it prints in color.",
   "main": "ansicolors.js",
   "scripts": {
